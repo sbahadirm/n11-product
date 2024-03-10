@@ -1,0 +1,12 @@
+version: '3'
+services:
+  solr:
+    image: solr:latest
+    container_name: n11_solr
+    ports:
+      - "8983:8983"
+    volumes:
+      - ./data:/var/solr
+    command:
+      - solr-precreate
+      - n11_products

@@ -1,0 +1,599 @@
+2024-03-10 07:28:10.819 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server jetty-10.0.19; built: 2023-12-15T20:38:32.477Z; git: 8492d1c78f122bb30cce20aecfa07e7283facd47; jvm 17.0.10+7
+2024-03-10 07:28:11.077 WARN  (main) [c: s: r: x: t:] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2024-03-10 07:28:11.102 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2024-03-10 07:28:11.111 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.5.0
+2024-03-10 07:28:11.111 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2024-03-10 07:28:11.111 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /opt/solr-9.5.0
+2024-03-10 07:28:11.111 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2024-03-10T07:28:11.111315636Z
+2024-03-10 07:28:11.114 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /var/solr/logs/jvm_crash_17.log
+2024-03-10 07:28:11.139 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr Home: /var/solr/data (source: system property: solr.solr.home)
+2024-03-10 07:28:11.159 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrXmlConfig solr.xml not found in SOLR_HOME, using built-in default
+2024-03-10 07:28:11.159 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrXmlConfig Loading solr.xml from /opt/solr-9.5.0/server/solr/solr.xml
+2024-03-10 07:28:11.224 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/opt/solr-9.5.0/lib]
+2024-03-10 07:28:11.927 INFO  (main) [c: s: r: x: t:] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
+2024-03-10 07:28:12.609 WARN  (main) [c: s: r: x: t:] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2024-03-10 07:28:12.623 WARN  (main) [c: s: r: x: t:] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2024-03-10 07:28:13.197 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /var/solr/data
+2024-03-10 07:28:13.198 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Cores are: [n11_products]
+2024-03-10 07:28:13.260 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.9.0
+2024-03-10 07:28:13.408 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.s.IndexSchema Schema name=default-config
+2024-03-10 07:28:13.467 WARN  (main) [c: s: r: x: t:] o.g.j.m.i.MessagingBinders A class jakarta.activation.DataSource for a default provider MessageBodyWriter<jakarta.activation.DataSource> was not found. The provider is not available.
+2024-03-10 07:28:13.811 INFO  (main) [c: s: r: x: t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-03-10 07:28:13.972 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2024-03-10 07:28:13.972 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.c.CoreContainer Creating SolrCore 'n11_products' using configuration from instancedir /var/solr/data/n11_products, trusted=true
+2024-03-10 07:28:13.981 INFO  (main) [c: s: r: x: t:] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@5922ae77{solr-jetty-context.xml,/solr,file:///opt/solr-9.5.0/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr-9.5.0/server/solr-webapp/webapp}
+2024-03-10 07:28:14.000 INFO  (main) [c: s: r: x: t:] o.e.j.s.RequestLogWriter Opened /var/solr/logs/2024_03_10.request.log
+2024-03-10 07:28:14.004 INFO  (main) [c: s: r: x: t:] o.e.j.s.AbstractConnector Started ServerConnector@61884cb1{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2024-03-10 07:28:14.005 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server Started Server@350ec41e{STARTING}[10.0.19,sto=0] @4447ms
+2024-03-10 07:28:14.009 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.c.SolrCore Opening new SolrCore at [/var/solr/data/n11_products], dataDir=[/var/solr/data/n11_products/data/]
+2024-03-10 07:28:14.521 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2024-03-10 07:28:14.537 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2024-03-10 07:28:14.538 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2024-03-10 07:28:14.553 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2024-03-10 07:28:14.553 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2024-03-10 07:28:14.613 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/n11_products/conf
+2024-03-10 07:28:14.633 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.s.DirectSolrSpellChecker init: {name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4, accuracy=0.5, maxQueryFrequency=0.01}
+2024-03-10 07:28:14.640 INFO  (coreLoadExecutor-11-thread-1) [c: s: r: x:n11_products t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2024-03-10 07:28:14.641 INFO  (searcherExecutor-13-thread-1-processing-n11_products) [c: s: r: x:n11_products t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-03-10 07:28:14.641 INFO  (searcherExecutor-13-thread-1-processing-n11_products) [c: s: r: x:n11_products t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2024-03-10 07:28:14.649 INFO  (searcherExecutor-13-thread-1-processing-n11_products) [c: s: r: x:n11_products t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-03-10 07:28:31.374 INFO  (qtp1331270134-18-null-2) [c: s: r: x: t:null-2] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710055711337} status=0 QTime=14
+2024-03-10 07:28:31.387 INFO  (qtp1331270134-24-null-3) [c: s: r: x: t:null-3] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710055711337} status=0 QTime=29
+2024-03-10 07:28:31.402 INFO  (qtp1331270134-17-null-4) [c: s: r: x: t:null-4] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710055711337} status=0 QTime=4
+2024-03-10 07:28:38.554 INFO  (qtp1331270134-22-null-6) [c: s: r: x: t:null-6] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710055718534} status=0 QTime=0
+2024-03-10 07:28:38.561 INFO  (qtp1331270134-26-null-7) [c: s: r: x: t:null-7] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710055718534} status=0 QTime=7
+2024-03-10 07:28:38.573 INFO  (qtp1331270134-25-null-8) [c: s: r: x: t:null-8] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710055718534} status=0 QTime=5
+2024-03-10 07:29:13.554 INFO  (qtp1331270134-25-null-9) [c: s: r: x: t:null-9] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710055718534} status=0 QTime=5
+2024-03-10 07:29:13.558 INFO  (qtp1331270134-22-null-10) [c: s: r: x: t:null-10] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710055718534} status=0 QTime=0
+2024-03-10 07:29:13.573 INFO  (qtp1331270134-26-null-11) [c: s: r: x:n11_products t:null-11] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1710055718534&ts=1710055718534} status=503 QTime=3
+2024-03-10 07:29:13.576 INFO  (qtp1331270134-21-null-12) [c: s: r: x:n11_products t:null-12] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1710055753534} status=0 QTime=2
+2024-03-10 07:29:13.587 INFO  (qtp1331270134-22-null-13) [c: s: r: x:n11_products t:null-13] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1710055753534} status=0 QTime=5
+2024-03-10 07:29:13.596 INFO  (qtp1331270134-25-null-14) [c: s: r: x:n11_products t:null-14] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1710055753534} status=0 QTime=5
+2024-03-10 07:29:26.859 INFO  (qtp1331270134-22-null-15) [c: s: r: x: t:null-15] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710055718534} status=0 QTime=0
+2024-03-10 07:29:26.892 INFO  (qtp1331270134-21-null-16) [c: s: r: x: t:null-16] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710055718534} status=0 QTime=6
+2024-03-10 07:29:26.910 INFO  (qtp1331270134-20-null-17) [c: s: r: x:n11_products t:null-17] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1710055753534} status=0 QTime=16
+2024-03-10 07:29:28.207 INFO  (qtp1331270134-22-null-18) [c: s: r: x: t:null-18] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710055718534} status=0 QTime=0
+2024-03-10 07:29:28.217 INFO  (qtp1331270134-21-null-19) [c: s: r: x:n11_products t:null-19] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1710055753534} status=0 QTime=1
+2024-03-10 07:29:28.233 INFO  (qtp1331270134-45-null-20) [c: s: r: x: t:null-20] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710055718534} status=0 QTime=9
+2024-03-10 07:29:30.526 INFO  (qtp1331270134-20-null-21) [c: s: r: x: t:null-21] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710055718534} status=0 QTime=1
+2024-03-10 07:29:30.541 INFO  (qtp1331270134-22-null-22) [c: s: r: x: t:null-22] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710055718534} status=0 QTime=10
+2024-03-10 07:29:30.555 INFO  (qtp1331270134-21-null-23) [c: s: r: x: t:null-23] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710055718534} status=0 QTime=4
+2024-03-10 07:29:32.697 INFO  (qtp1331270134-22-null-24) [c: s: r: x:n11_products t:null-24] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1710055753534} status=0 QTime=0
+2024-03-10 07:29:32.704 INFO  (qtp1331270134-45-null-25) [c: s: r: x:n11_products t:null-25] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1710055753534} status=0 QTime=1
+2024-03-10 07:29:32.713 INFO  (qtp1331270134-21-null-26) [c: s: r: x: t:null-26] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710055718534} status=0 QTime=0
+2024-03-10 07:29:32.727 INFO  (qtp1331270134-22-null-27) [c: s: r: x: t:null-27] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710055718534} status=0 QTime=8
+2024-03-10 07:29:32.733 INFO  (qtp1331270134-21-null-29) [c: s: r: x:n11_products t:null-29] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1710055718534&ts=1710055718534} status=503 QTime=0
+2024-03-10 07:29:32.734 INFO  (qtp1331270134-45-null-28) [c: s: r: x:n11_products t:null-28] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1710055753534} status=0 QTime=4
+2024-03-10 07:39:14.542 INFO  (qtp1331270134-18-null-30) [c: s: r: x:n11_products t:null-30] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=0&rows=0&wt=javabin&version=2} hits=0 status=0 QTime=39
+2024-03-10 07:40:38.531 INFO  (qtp1331270134-22-null-31) [c: s: r: x:n11_products t:null-31] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /var/solr/data/n11_products/conf/managed-schema.xml
+2024-03-10 07:40:38.649 INFO  (qtp1331270134-22-null-31) [c: s: r: x:n11_products t:null-31] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={wt=javabin&version=2}{add=[1 (1793124140101664768)]} 0 1454
+2024-03-10 07:40:39.098 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-32) [c: s: r: x:n11_products t:null-32] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-03-10 07:40:39.106 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-32) [c: s: r: x:n11_products t:null-32] o.a.s.c.SolrCore Registered new searcher autowarm time: 3 ms
+2024-03-10 07:40:39.113 INFO  (qtp1331270134-45-null-32) [c: s: r: x:n11_products t:null-32] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 430
+2024-03-10 07:40:49.759 INFO  (qtp1331270134-22-null-33) [c: s: r: x:n11_products t:null-33] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={wt=javabin&version=2}{add=[1 (1793124151819501568)]} 0 40
+2024-03-10 07:40:50.096 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-34) [c: s: r: x:n11_products t:null-34] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-03-10 07:40:50.099 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-34) [c: s: r: x:n11_products t:null-34] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-03-10 07:40:50.198 INFO  (qtp1331270134-45-null-34) [c: s: r: x:n11_products t:null-34] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 434
+2024-03-10 07:40:53.629 INFO  (qtp1331270134-22-null-35) [c: s: r: x:n11_products t:null-35] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=0&rows=0&wt=javabin&version=2} hits=1 status=0 QTime=6
+2024-03-10 07:40:53.652 INFO  (qtp1331270134-45-null-36) [c: s: r: x:n11_products t:null-36] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=0&rows=1&wt=javabin&version=2} hits=1 status=0 QTime=4
+2024-03-10 07:41:05.530 INFO  (qtp1331270134-22-null-37) [c: s: r: x:n11_products t:null-37] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={wt=javabin&version=2}{add=[1 (1793124168360787968)]} 0 37
+2024-03-10 07:41:05.887 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-38) [c: s: r: x:n11_products t:null-38] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-03-10 07:41:05.891 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-38) [c: s: r: x:n11_products t:null-38] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-03-10 07:41:05.988 INFO  (qtp1331270134-45-null-38) [c: s: r: x:n11_products t:null-38] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 451
+2024-03-10 07:41:19.299 INFO  (qtp1331270134-22-null-39) [c: s: r: x:n11_products t:null-39] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={wt=javabin&version=2}{add=[2 (1793124182804922368)]} 0 32
+2024-03-10 07:41:19.715 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-40) [c: s: r: x:n11_products t:null-40] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-03-10 07:41:19.718 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-40) [c: s: r: x:n11_products t:null-40] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-03-10 07:41:19.719 INFO  (qtp1331270134-45-null-40) [c: s: r: x:n11_products t:null-40] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 415
+2024-03-10 07:41:23.631 INFO  (qtp1331270134-22-null-41) [c: s: r: x:n11_products t:null-41] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=0&rows=0&wt=javabin&version=2} hits=2 status=0 QTime=0
+2024-03-10 07:41:23.644 INFO  (qtp1331270134-45-null-42) [c: s: r: x:n11_products t:null-42] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=0&rows=2&wt=javabin&version=2} hits=2 status=0 QTime=0
+2024-03-10 07:41:59.537 INFO  (qtp1331270134-45-null-45) [c: s: r: x: t:null-45] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=3
+2024-03-10 07:41:59.550 INFO  (qtp1331270134-22-null-44) [c: s: r: x: t:null-44] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=18
+2024-03-10 07:41:59.558 INFO  (qtp1331270134-17-null-46) [c: s: r: x:n11_products t:null-46] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1710056519526} status=0 QTime=10
+2024-03-10 07:41:59.562 INFO  (qtp1331270134-45-null-48) [c: s: r: x:n11_products t:null-48] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1710056519497&ts=1710056519497} status=503 QTime=0
+2024-03-10 07:41:59.608 INFO  (qtp1331270134-22-null-49) [c: s: r: x:n11_products t:null-49] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1710056519526} status=0 QTime=22
+2024-03-10 07:41:59.650 INFO  (qtp1331270134-24-null-47) [c: s: r: x:n11_products t:null-47] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1710056519526} status=0 QTime=95
+2024-03-10 07:42:46.012 INFO  (qtp1331270134-47-null-50) [c: s: r: x:n11_products t:null-50] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={wt=javabin&version=2}{add=[c5146795-6584-4b1c-967e-8eaa6d9110ee (1793124273715412992)]} 0 51
+2024-03-10 07:42:46.467 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-51) [c: s: r: x:n11_products t:null-51] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-03-10 07:42:46.473 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-51) [c: s: r: x:n11_products t:null-51] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-03-10 07:42:46.476 INFO  (qtp1331270134-22-null-51) [c: s: r: x:n11_products t:null-51] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 456
+2024-03-10 08:08:51.889 INFO  (qtp1331270134-17-null-52) [c: s: r: x:n11_products t:null-52] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:hhh&start=0&rows=1&wt=javabin&version=2} hits=0 status=0 QTime=43
+2024-03-10 08:08:56.212 INFO  (qtp1331270134-45-null-53) [c: s: r: x:n11_products t:null-53] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:1&start=0&rows=1&wt=javabin&version=2} hits=1 status=0 QTime=21
+2024-03-10 08:08:59.491 INFO  (qtp1331270134-24-null-54) [c: s: r: x:n11_products t:null-54] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:2&start=0&rows=1&wt=javabin&version=2} hits=1 status=0 QTime=4
+2024-03-10 08:11:08.673 INFO  (qtp1331270134-22-null-55) [c: s: r: x:n11_products t:null-55] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*kalem*&start=0&rows=0&wt=javabin&version=2} hits=1 status=0 QTime=48
+2024-03-10 08:11:08.706 INFO  (qtp1331270134-45-null-56) [c: s: r: x:n11_products t:null-56] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*kalem*&start=0&rows=1&wt=javabin&version=2} hits=1 status=0 QTime=3
+2024-03-10 08:11:12.240 INFO  (qtp1331270134-22-null-57) [c: s: r: x:n11_products t:null-57] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*kal*&start=0&rows=0&wt=javabin&version=2} hits=1 status=0 QTime=15
+2024-03-10 08:11:12.248 INFO  (qtp1331270134-45-null-58) [c: s: r: x:n11_products t:null-58] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*kal*&start=0&rows=1&wt=javabin&version=2} hits=1 status=0 QTime=1
+2024-03-10 08:11:17.000 INFO  (qtp1331270134-22-null-59) [c: s: r: x:n11_products t:null-59] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*l*&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=10
+2024-03-10 08:11:17.007 INFO  (qtp1331270134-45-null-60) [c: s: r: x:n11_products t:null-60] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*l*&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=1
+2024-03-10 08:13:34.753 INFO  (qtp1331270134-24-null-61) [c: s: r: x:n11_products t:null-61] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*l*&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=15
+2024-03-10 08:13:34.774 INFO  (qtp1331270134-22-null-62) [c: s: r: x:n11_products t:null-62] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*l*&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=1
+2024-03-10 08:13:40.711 INFO  (qtp1331270134-24-null-63) [c: s: r: x:n11_products t:null-63] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*kal*&start=0&rows=0&wt=javabin&version=2} hits=1 status=0 QTime=1
+2024-03-10 08:13:40.729 INFO  (qtp1331270134-22-null-64) [c: s: r: x:n11_products t:null-64] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*kal*&start=0&rows=1&wt=javabin&version=2} hits=1 status=0 QTime=2
+2024-03-10 08:20:18.179 INFO  (qtp1331270134-18-null-65) [c: s: r: x:n11_products t:null-65] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[*+TO+100}&start=0&rows=0&wt=javabin&version=2} hits=0 status=0 QTime=40
+2024-03-10 08:20:18.212 INFO  (qtp1331270134-45-null-66) [c: s: r: x:n11_products t:null-66] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[*+TO+100}&start=0&rows=0&wt=javabin&version=2} hits=0 status=0 QTime=0
+2024-03-10 08:20:21.273 INFO  (qtp1331270134-25-null-67) [c: s: r: x:n11_products t:null-67] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[*+TO+1000}&start=0&rows=0&wt=javabin&version=2} hits=0 status=0 QTime=14
+2024-03-10 08:20:21.284 INFO  (qtp1331270134-45-null-68) [c: s: r: x:n11_products t:null-68] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[*+TO+1000}&start=0&rows=0&wt=javabin&version=2} hits=0 status=0 QTime=0
+2024-03-10 08:20:23.763 INFO  (qtp1331270134-25-null-69) [c: s: r: x:n11_products t:null-69] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[*+TO+10000}&start=0&rows=0&wt=javabin&version=2} hits=0 status=0 QTime=3
+2024-03-10 08:20:23.774 INFO  (qtp1331270134-45-null-70) [c: s: r: x:n11_products t:null-70] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[*+TO+10000}&start=0&rows=0&wt=javabin&version=2} hits=0 status=0 QTime=0
+2024-03-10 08:20:26.521 INFO  (qtp1331270134-25-null-71) [c: s: r: x:n11_products t:null-71] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[*+TO+100000}&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=4
+2024-03-10 08:20:26.532 INFO  (qtp1331270134-45-null-72) [c: s: r: x:n11_products t:null-72] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[*+TO+100000}&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=0
+2024-03-10 08:20:37.908 INFO  (qtp1331270134-25-null-73) [c: s: r: x:n11_products t:null-73] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[*+TO+11000}&start=0&rows=0&wt=javabin&version=2} hits=1 status=0 QTime=5
+2024-03-10 08:20:37.920 INFO  (qtp1331270134-45-null-74) [c: s: r: x:n11_products t:null-74] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[*+TO+11000}&start=0&rows=1&wt=javabin&version=2} hits=1 status=0 QTime=0
+2024-03-10 08:20:49.656 INFO  (qtp1331270134-25-null-75) [c: s: r: x:n11_products t:null-75] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:{11000+TO+*]&start=0&rows=0&wt=javabin&version=2} hits=2 status=0 QTime=7
+2024-03-10 08:20:49.678 INFO  (qtp1331270134-45-null-76) [c: s: r: x:n11_products t:null-76] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:{11000+TO+*]&start=0&rows=2&wt=javabin&version=2} hits=2 status=0 QTime=0
+2024-03-10 08:21:05.501 INFO  (qtp1331270134-25-null-77) [c: s: r: x:n11_products t:null-77] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[11000+TO+110000]&start=0&rows=0&wt=javabin&version=2} hits=2 status=0 QTime=5
+2024-03-10 08:21:05.530 INFO  (qtp1331270134-45-null-78) [c: s: r: x:n11_products t:null-78] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[11000+TO+110000]&start=0&rows=2&wt=javabin&version=2} hits=2 status=0 QTime=0
+2024-03-10 08:21:11.786 INFO  (qtp1331270134-25-null-79) [c: s: r: x:n11_products t:null-79] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[100+TO+110000]&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=11
+2024-03-10 08:21:11.801 INFO  (qtp1331270134-45-null-80) [c: s: r: x:n11_products t:null-80] o.a.s.c.S.Request webapp=/solr path=/select params={q=price:[100+TO+110000]&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=0
+2024-03-10 08:23:50.064 INFO  (qtp1331270134-22-null-81) [c: s: r: x:n11_products t:null-81] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:{2024/12/12+TO+*]&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=34
+2024-03-10 08:23:50.097 INFO  (qtp1331270134-25-null-82) [c: s: r: x:n11_products t:null-82] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:{2024/12/12+TO+*]&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=1
+2024-03-10 08:23:58.223 INFO  (qtp1331270134-22-null-83) [c: s: r: x:n11_products t:null-83] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:{2025/12/12+TO+*]&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=1
+2024-03-10 08:23:58.229 INFO  (qtp1331270134-25-null-84) [c: s: r: x:n11_products t:null-84] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:{2025/12/12+TO+*]&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=0
+2024-03-10 08:25:14.262 INFO  (qtp1331270134-45-null-85) [c: s: r: x:n11_products t:null-85] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:[2025/12/12+TO+*]&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=10
+2024-03-10 08:25:14.287 INFO  (qtp1331270134-22-null-86) [c: s: r: x:n11_products t:null-86] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:[2025/12/12+TO+*]&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=0
+2024-03-10 08:25:16.434 INFO  (qtp1331270134-45-null-87) [c: s: r: x:n11_products t:null-87] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:[2025/12/12+TO+*]&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=0
+2024-03-10 08:25:16.440 INFO  (qtp1331270134-22-null-88) [c: s: r: x:n11_products t:null-88] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:[2025/12/12+TO+*]&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=0
+2024-03-10 08:26:12.547 INFO  (qtp1331270134-25-null-89) [c: s: r: x:n11_products t:null-89] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:{2025/12/12+TO+*]&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=10
+2024-03-10 08:26:12.566 INFO  (qtp1331270134-45-null-90) [c: s: r: x:n11_products t:null-90] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:{2025/12/12+TO+*]&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=0
+2024-03-10 08:26:17.519 INFO  (qtp1331270134-25-null-91) [c: s: r: x:n11_products t:null-91] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:{2025/12/12+TO+*]&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=0
+2024-03-10 08:26:17.526 INFO  (qtp1331270134-45-null-92) [c: s: r: x:n11_products t:null-92] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:{2025/12/12+TO+*]&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=0
+2024-03-10 08:29:54.973 INFO  (qtp1331270134-17-null-93) [c: s: r: x:n11_products t:null-93] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={wt=javabin&version=2}{add=[c6ee6be8-2112-45f9-8e7a-2e4608e7c34e (1793127240043593728)]} 0 101
+2024-03-10 08:29:58.523 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-94) [c: s: r: x:n11_products t:null-94] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-03-10 08:29:58.530 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-94) [c: s: r: x:n11_products t:null-94] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-03-10 08:29:58.534 INFO  (qtp1331270134-22-null-94) [c: s: r: x:n11_products t:null-94] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 3540
+2024-03-10 08:30:05.806 INFO  (qtp1331270134-21-null-95) [c: s: r: x:n11_products t:null-95] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=0&rows=0&wt=javabin&version=2} hits=4 status=0 QTime=7
+2024-03-10 08:30:05.827 INFO  (qtp1331270134-22-null-96) [c: s: r: x:n11_products t:null-96] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&start=0&rows=4&wt=javabin&version=2} hits=4 status=0 QTime=0
+2024-03-10 08:31:18.340 INFO  (qtp1331270134-45-null-97) [c: s: r: x:n11_products t:null-97] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={wt=javabin&version=2}{add=[25 (1793127327507415040)]} 0 53
+2024-03-10 08:31:19.027 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-98) [c: s: r: x:n11_products t:null-98] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2024-03-10 08:31:19.034 INFO  (searcherExecutor-13-thread-1-processing-n11_products null-98) [c: s: r: x:n11_products t:null-98] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2024-03-10 08:31:19.036 INFO  (qtp1331270134-21-null-98) [c: s: r: x:n11_products t:null-98] o.a.s.u.p.LogUpdateProcessorFactory webapp=/solr path=/update params={waitSearcher=true&commit=true&softCommit=false&wt=javabin&version=2}{commit=} 0 691
+2024-03-10 08:31:36.597 INFO  (qtp1331270134-45-null-99) [c: s: r: x:n11_products t:null-99] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:*4*+OR+name:*4*&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=25
+2024-03-10 08:31:36.604 INFO  (qtp1331270134-21-null-100) [c: s: r: x:n11_products t:null-100] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:*4*+OR+name:*4*&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=1
+2024-03-10 08:36:15.867 INFO  (qtp1331270134-25-null-101) [c: s: r: x:n11_products t:null-101] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:*4*+OR+name:*4*&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=15
+2024-03-10 08:36:15.898 INFO  (qtp1331270134-22-null-102) [c: s: r: x:n11_products t:null-102] o.a.s.c.S.Request webapp=/solr path=/select params={q=id:*4*+OR+name:*4*&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=2
+2024-03-10 08:40:36.695 ERROR (qtp1331270134-17-null-103) [c: s: r: x:n11_products t:null-103] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'expiration_date:[2025/01/01 T= ]': Encountered " <RANGE_GOOP> "T= "" at line 1, column 28.
+Was expecting:
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'expiration_date:[2025/01/01 T= ]': Encountered " <RANGE_GOOP> "T= "" at line 1, column 28.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:219) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:431) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:226) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2884) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.executeCoreRequest(HttpSolrCall.java:875) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:561) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:262) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:219) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:249) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:215) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.19.jar:10.0.19]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'expiration_date:[2025/01/01 T= ]': Encountered " <RANGE_GOOP> "T= "" at line 1, column 28.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:279) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:51) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:188) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:173) ~[?:?]
+	... 47 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "T= "" at line 1, column 28.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:966) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:829) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:492) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:293) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:173) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:143) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:276) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:51) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:188) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:173) ~[?:?]
+	... 47 more
+2024-03-10 08:40:36.696 INFO  (qtp1331270134-17-null-103) [c: s: r: x:n11_products t:null-103] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:[2025/01/01+T%3D+]&start=0&rows=0&wt=javabin&version=2} status=400 QTime=12
+2024-03-10 08:41:48.492 ERROR (qtp1331270134-22-null-104) [c: s: r: x:n11_products t:null-104] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'expiration_date:[2025/01/01 T= *]': Encountered " <RANGE_GOOP> "T= "" at line 1, column 28.
+Was expecting:
+org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'expiration_date:[2025/01/01 T= *]': Encountered " <RANGE_GOOP> "T= "" at line 1, column 28.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:219) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:431) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:226) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2884) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.executeCoreRequest(HttpSolrCall.java:875) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:561) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:262) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:219) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:249) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:215) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.19.jar:10.0.19]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'expiration_date:[2025/01/01 T= *]': Encountered " <RANGE_GOOP> "T= "" at line 1, column 28.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:279) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:51) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:188) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:173) ~[?:?]
+	... 52 more
+Caused by: org.apache.solr.parser.ParseException: Encountered " <RANGE_GOOP> "T= "" at line 1, column 28.
+Was expecting:
+    "TO" ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:966) ~[?:?]
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:829) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:492) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:293) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:173) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:143) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:276) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:51) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:188) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:173) ~[?:?]
+	... 52 more
+2024-03-10 08:41:48.494 INFO  (qtp1331270134-22-null-104) [c: s: r: x:n11_products t:null-104] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:[2025/01/01+T%3D+*]&start=0&rows=0&wt=javabin&version=2} status=400 QTime=8
+2024-03-10 08:42:02.535 INFO  (qtp1331270134-45-null-105) [c: s: r: x:n11_products t:null-105] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:[2025/01/01+TO+*]&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=9
+2024-03-10 08:42:02.554 INFO  (qtp1331270134-21-null-106) [c: s: r: x:n11_products t:null-106] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:[2025/01/01+TO+*]&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=0
+2024-03-10 08:54:46.428 INFO  (qtp1331270134-18-null-107) [c: s: r: x:n11_products t:null-107] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:[2025/01/01+TO+*]&start=0&rows=0&wt=javabin&version=2} hits=3 status=0 QTime=9
+2024-03-10 08:54:46.461 INFO  (qtp1331270134-22-null-108) [c: s: r: x:n11_products t:null-108] o.a.s.c.S.Request webapp=/solr path=/select params={q=expiration_date:[2025/01/01+TO+*]&start=0&rows=3&wt=javabin&version=2} hits=3 status=0 QTime=2
+2024-03-10 08:59:02.098 INFO  (qtp1331270134-17-null-109) [c: s: r: x: t:null-109] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=3
+2024-03-10 08:59:02.122 INFO  (qtp1331270134-22-null-110) [c: s: r: x:n11_products t:null-110] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=28
+2024-03-10 08:59:02.129 INFO  (qtp1331270134-21-null-111) [c: s: r: x: t:null-111] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=28
+2024-03-10 08:59:34.903 INFO  (qtp1331270134-25-null-113) [c: s: r: x:n11_products t:null-113] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=1
+2024-03-10 08:59:34.913 INFO  (qtp1331270134-21-null-112) [c: s: r: x:n11_products t:null-112] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*sil*&indent=true&q.op=OR&useParams=&_=1710061142070} hits=2 status=0 QTime=12
+2024-03-10 08:59:34.933 INFO  (qtp1331270134-47-null-115) [c: s: r: x: t:null-115] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 08:59:34.938 INFO  (qtp1331270134-22-null-114) [c: s: r: x: t:null-114] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=9
+2024-03-10 09:00:05.586 INFO  (qtp1331270134-21-null-118) [c: s: r: x: t:null-118] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:00:05.587 INFO  (qtp1331270134-25-null-117) [c: s: r: x: t:null-117] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=7
+2024-03-10 09:00:05.592 INFO  (qtp1331270134-22-null-116) [c: s: r: x:n11_products t:null-116] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*sil*+and+id:2&indent=true&q.op=OR&useParams=&_=1710061142070} hits=2 status=0 QTime=20
+2024-03-10 09:00:05.601 INFO  (qtp1331270134-24-null-119) [c: s: r: x:n11_products t:null-119] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:00:16.623 INFO  (qtp1331270134-47-null-120) [c: s: r: x:n11_products t:null-120] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*sil*+and+id:"2"&indent=true&q.op=OR&useParams=&_=1710061142070} hits=2 status=0 QTime=2
+2024-03-10 09:00:16.634 INFO  (qtp1331270134-25-null-121) [c: s: r: x: t:null-121] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=5
+2024-03-10 09:00:16.634 INFO  (qtp1331270134-22-null-122) [c: s: r: x:n11_products t:null-122] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:00:16.643 INFO  (qtp1331270134-47-null-123) [c: s: r: x: t:null-123] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:00:25.278 INFO  (qtp1331270134-22-null-124) [c: s: r: x:n11_products t:null-124] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*sil*+AND+id:"2"&indent=true&q.op=OR&useParams=&_=1710061142070} hits=1 status=0 QTime=6
+2024-03-10 09:00:25.288 INFO  (qtp1331270134-25-null-125) [c: s: r: x: t:null-125] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=5
+2024-03-10 09:00:25.290 INFO  (qtp1331270134-24-null-126) [c: s: r: x:n11_products t:null-126] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:00:25.294 INFO  (qtp1331270134-21-null-127) [c: s: r: x: t:null-127] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:00:32.386 INFO  (qtp1331270134-25-null-128) [c: s: r: x: t:null-128] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=5
+2024-03-10 09:00:32.392 INFO  (qtp1331270134-24-null-130) [c: s: r: x: t:null-130] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:00:32.395 INFO  (qtp1331270134-22-null-129) [c: s: r: x: t:null-129] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=5
+2024-03-10 09:02:43.103 INFO  (qtp1331270134-25-null-133) [c: s: r: x:n11_products t:null-133] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1710056519497&ts=1710056519497} status=503 QTime=1
+2024-03-10 09:02:43.108 INFO  (qtp1331270134-17-null-134) [c: s: r: x: t:null-134] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=1
+2024-03-10 09:02:43.110 INFO  (qtp1331270134-21-null-132) [c: s: r: x:n11_products t:null-132] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1710056519526} status=0 QTime=13
+2024-03-10 09:02:43.136 INFO  (qtp1331270134-22-null-131) [c: s: r: x: t:null-131] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=38
+2024-03-10 09:02:43.148 INFO  (qtp1331270134-50-null-136) [c: s: r: x:n11_products t:null-136] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1710056519526} status=0 QTime=6
+2024-03-10 09:02:43.328 INFO  (qtp1331270134-51-null-135) [c: s: r: x:n11_products t:null-135] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1710056519526} status=0 QTime=201
+2024-03-10 09:02:46.476 INFO  (qtp1331270134-50-null-137) [c: s: r: x: t:null-137] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:02:46.484 INFO  (qtp1331270134-51-null-138) [c: s: r: x:n11_products t:null-138] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:02:46.494 INFO  (qtp1331270134-17-null-139) [c: s: r: x: t:null-139] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:03:11.610 INFO  (qtp1331270134-50-null-140) [c: s: r: x:n11_products t:null-140] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:03:11.616 INFO  (qtp1331270134-17-null-141) [c: s: r: x: t:null-141] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:03:11.633 INFO  (qtp1331270134-51-null-142) [c: s: r: x: t:null-142] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=6
+2024-03-10 09:03:11.636 INFO  (qtp1331270134-17-null-143) [c: s: r: x:n11_products t:null-143] o.a.s.c.S.Request webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&useParams=&_=1710061142070} hits=5 status=0 QTime=3
+2024-03-10 09:03:33.533 INFO  (qtp1331270134-50-null-144) [c: s: r: x:n11_products t:null-144] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:"kalem"&indent=true&q.op=OR&useParams=&_=1710061142070} hits=1 status=0 QTime=4
+2024-03-10 09:03:33.534 INFO  (qtp1331270134-25-null-145) [c: s: r: x:n11_products t:null-145] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:03:33.541 INFO  (qtp1331270134-17-null-146) [c: s: r: x: t:null-146] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:03:33.558 INFO  (qtp1331270134-22-null-147) [c: s: r: x: t:null-147] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=3
+2024-03-10 09:03:38.579 INFO  (qtp1331270134-17-null-148) [c: s: r: x: t:null-148] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:03:38.586 INFO  (qtp1331270134-51-null-149) [c: s: r: x:n11_products t:null-149] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:"kal"&indent=true&q.op=OR&useParams=&_=1710061142070} hits=0 status=0 QTime=1
+2024-03-10 09:03:38.593 INFO  (qtp1331270134-25-null-150) [c: s: r: x:n11_products t:null-150] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:03:38.603 INFO  (qtp1331270134-17-null-151) [c: s: r: x: t:null-151] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:03:53.446 INFO  (qtp1331270134-51-null-152) [c: s: r: x:n11_products t:null-152] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:"kal"*&indent=true&q.op=OR&useParams=&_=1710061142070} hits=5 status=0 QTime=3
+2024-03-10 09:03:53.454 INFO  (qtp1331270134-17-null-153) [c: s: r: x: t:null-153] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:03:53.457 INFO  (qtp1331270134-22-null-154) [c: s: r: x:n11_products t:null-154] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:03:53.490 INFO  (qtp1331270134-51-null-155) [c: s: r: x: t:null-155] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:04:02.526 INFO  (qtp1331270134-25-null-156) [c: s: r: x: t:null-156] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:04:02.527 INFO  (qtp1331270134-51-null-157) [c: s: r: x:n11_products t:null-157] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:04:02.538 INFO  (qtp1331270134-17-null-158) [c: s: r: x: t:null-158] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:04:02.547 INFO  (qtp1331270134-22-null-159) [c: s: r: x:n11_products t:null-159] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:"kal*"&indent=true&q.op=OR&useParams=&_=1710061142070} hits=0 status=0 QTime=0
+2024-03-10 09:04:10.559 INFO  (qtp1331270134-51-null-160) [c: s: r: x: t:null-160] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:04:10.566 INFO  (qtp1331270134-22-null-161) [c: s: r: x:n11_products t:null-161] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:04:10.574 INFO  (qtp1331270134-25-null-162) [c: s: r: x:n11_products t:null-162] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*kal*&indent=true&q.op=OR&useParams=&_=1710061142070} hits=1 status=0 QTime=3
+2024-03-10 09:04:10.585 INFO  (qtp1331270134-51-null-163) [c: s: r: x: t:null-163] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=3
+2024-03-10 09:04:20.717 INFO  (qtp1331270134-47-null-164) [c: s: r: x:n11_products t:null-164] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*l*&indent=true&q.op=OR&useParams=&_=1710061142070} hits=4 status=0 QTime=3
+2024-03-10 09:04:20.726 INFO  (qtp1331270134-50-null-166) [c: s: r: x:n11_products t:null-166] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:04:20.735 INFO  (qtp1331270134-22-null-167) [c: s: r: x: t:null-167] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:04:20.741 INFO  (qtp1331270134-17-null-165) [c: s: r: x: t:null-165] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=18
+2024-03-10 09:05:05.516 INFO  (qtp1331270134-50-null-168) [c: s: r: x:n11_products t:null-168] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*l*+and+id:"1"&indent=true&q.op=OR&useParams=&_=1710061142070} hits=4 status=0 QTime=4
+2024-03-10 09:05:05.519 INFO  (qtp1331270134-20-null-169) [c: s: r: x: t:null-169] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:05:05.526 INFO  (qtp1331270134-47-null-170) [c: s: r: x:n11_products t:null-170] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:05:05.560 INFO  (qtp1331270134-50-null-171) [c: s: r: x: t:null-171] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:05:14.570 INFO  (qtp1331270134-17-null-172) [c: s: r: x:n11_products t:null-172] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*l*+AND+id:"1"&indent=true&q.op=OR&useParams=&_=1710061142070} hits=1 status=0 QTime=4
+2024-03-10 09:05:14.572 INFO  (qtp1331270134-47-null-173) [c: s: r: x: t:null-173] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:05:14.589 INFO  (qtp1331270134-22-null-174) [c: s: r: x: t:null-174] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:05:14.590 INFO  (qtp1331270134-20-null-175) [c: s: r: x:n11_products t:null-175] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:05:24.911 INFO  (qtp1331270134-22-null-176) [c: s: r: x: t:null-176] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:05:24.916 INFO  (qtp1331270134-17-null-177) [c: s: r: x:n11_products t:null-177] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:05:24.930 INFO  (qtp1331270134-20-null-178) [c: s: r: x: t:null-178] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:05:24.936 INFO  (qtp1331270134-22-null-179) [c: s: r: x:n11_products t:null-179] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*l*+OR+id:"1"&indent=true&q.op=OR&useParams=&_=1710061142070} hits=4 status=0 QTime=3
+2024-03-10 09:05:29.770 INFO  (qtp1331270134-20-null-180) [c: s: r: x: t:null-180] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:05:29.780 INFO  (qtp1331270134-47-null-181) [c: s: r: x:n11_products t:null-181] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*l*+AND+id:"1"&indent=true&q.op=OR&useParams=&_=1710061142070} hits=1 status=0 QTime=1
+2024-03-10 09:05:29.792 INFO  (qtp1331270134-20-null-183) [c: s: r: x:n11_products t:null-183] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:05:29.796 INFO  (qtp1331270134-17-null-182) [c: s: r: x: t:null-182] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=8
+2024-03-10 09:05:43.831 INFO  (qtp1331270134-22-null-184) [c: s: r: x: t:null-184] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:05:43.852 INFO  (qtp1331270134-20-null-185) [c: s: r: x: t:null-185] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=7
+2024-03-10 09:05:43.857 INFO  (qtp1331270134-47-null-186) [c: s: r: x:n11_products t:null-186] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:05:43.884 INFO  (qtp1331270134-22-null-187) [c: s: r: x:n11_products t:null-187] o.a.s.c.S.Request webapp=/solr path=/select params={q=name:*l*+NOT+id:"1"&indent=true&q.op=OR&useParams=&_=1710061142070} hits=3 status=0 QTime=5
+2024-03-10 09:06:25.198 INFO  (qtp1331270134-22-null-188) [c: s: r: x:n11_products t:null-188] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:06:25.210 INFO  (qtp1331270134-50-null-190) [c: s: r: x: t:null-190] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:06:25.215 INFO  (qtp1331270134-47-null-189) [c: s: r: x: t:null-189] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=9
+2024-03-10 09:06:25.220 INFO  (qtp1331270134-51-null-191) [c: s: r: x:n11_products t:null-191] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:0+TO+50&indent=true&q.op=OR&useParams=&_=1710061142070} hits=0 status=0 QTime=4
+2024-03-10 09:06:45.184 INFO  (qtp1331270134-20-null-192) [c: s: r: x:n11_products t:null-192] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[0+TO+50]&indent=true&q.op=OR&useParams=&_=1710061142070} hits=2 status=0 QTime=1
+2024-03-10 09:06:45.192 INFO  (qtp1331270134-51-null-193) [c: s: r: x:n11_products t:null-193] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:06:45.203 INFO  (qtp1331270134-17-null-194) [c: s: r: x: t:null-194] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=3
+2024-03-10 09:06:45.208 INFO  (qtp1331270134-20-null-195) [c: s: r: x: t:null-195] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:07:03.324 INFO  (qtp1331270134-20-null-197) [c: s: r: x: t:null-197] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:07:03.324 INFO  (qtp1331270134-51-null-196) [c: s: r: x: t:null-196] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=6
+2024-03-10 09:07:03.333 INFO  (qtp1331270134-17-null-198) [c: s: r: x:n11_products t:null-198] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[0+TO+500]&indent=true&q.op=OR&useParams=&_=1710061142070} hits=5 status=0 QTime=0
+2024-03-10 09:07:03.337 INFO  (qtp1331270134-47-null-199) [c: s: r: x:n11_products t:null-199] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:07:10.371 INFO  (qtp1331270134-17-null-200) [c: s: r: x: t:null-200] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=14
+2024-03-10 09:07:10.371 INFO  (qtp1331270134-47-null-201) [c: s: r: x:n11_products t:null-201] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[0+TO+*]&indent=true&q.op=OR&useParams=&_=1710061142070} hits=5 status=0 QTime=2
+2024-03-10 09:07:10.374 INFO  (qtp1331270134-51-null-202) [c: s: r: x: t:null-202] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:07:10.395 INFO  (qtp1331270134-20-null-203) [c: s: r: x:n11_products t:null-203] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:07:17.673 INFO  (qtp1331270134-22-null-204) [c: s: r: x:n11_products t:null-204] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[*+TO+11]&indent=true&q.op=OR&useParams=&_=1710061142070} hits=2 status=0 QTime=1
+2024-03-10 09:07:17.683 INFO  (qtp1331270134-20-null-205) [c: s: r: x: t:null-205] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:07:17.695 INFO  (qtp1331270134-51-null-206) [c: s: r: x: t:null-206] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=5
+2024-03-10 09:07:17.699 INFO  (qtp1331270134-22-null-207) [c: s: r: x:n11_products t:null-207] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:07:46.648 INFO  (qtp1331270134-22-null-208) [c: s: r: x:n11_products t:null-208] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[0+TO+*]&indent=true&q.op=OR&useParams=&_=1710061142070} hits=5 status=0 QTime=1
+2024-03-10 09:07:46.655 INFO  (qtp1331270134-51-null-209) [c: s: r: x: t:null-209] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:07:46.673 INFO  (qtp1331270134-20-null-210) [c: s: r: x: t:null-210] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:07:46.674 INFO  (qtp1331270134-17-null-211) [c: s: r: x:n11_products t:null-211] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:08:03.598 INFO  (qtp1331270134-51-null-212) [c: s: r: x:n11_products t:null-212] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[50+TO+*]&indent=true&q.op=OR&useParams=&_=1710061142070} hits=3 status=0 QTime=1
+2024-03-10 09:08:03.601 INFO  (qtp1331270134-22-null-213) [c: s: r: x: t:null-213] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:08:03.748 INFO  (qtp1331270134-17-null-215) [c: s: r: x:n11_products t:null-215] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:08:03.748 INFO  (qtp1331270134-20-null-214) [c: s: r: x: t:null-214] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=138
+2024-03-10 09:09:09.477 INFO  (qtp1331270134-51-null-218) [c: s: r: x:n11_products t:null-218] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:09:09.483 INFO  (qtp1331270134-22-null-219) [c: s: r: x: t:null-219] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:09:09.490 INFO  (qtp1331270134-20-null-216) [c: s: r: x:n11_products t:null-216] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[50+TO+*]&indent=true&q.op=OR&fq=price:"1230"&useParams=&_=1710061142070} hits=2 status=0 QTime=18
+2024-03-10 09:09:09.492 INFO  (qtp1331270134-17-null-217) [c: s: r: x: t:null-217] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=19
+2024-03-10 09:09:40.391 INFO  (qtp1331270134-47-null-220) [c: s: r: x:n11_products t:null-220] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[50+TO+*]&indent=true&q.op=OR&fq=price:"1230"&fq=name:*10*&useParams=&_=1710061142070} hits=1 status=0 QTime=6
+2024-03-10 09:09:40.391 INFO  (qtp1331270134-25-null-221) [c: s: r: x:n11_products t:null-221] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:09:40.397 INFO  (qtp1331270134-17-null-222) [c: s: r: x: t:null-222] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:09:40.409 INFO  (qtp1331270134-51-null-223) [c: s: r: x: t:null-223] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=3
+2024-03-10 09:11:14.035 INFO  (qtp1331270134-25-null-224) [c: s: r: x: t:null-224] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=3
+2024-03-10 09:11:14.035 INFO  (qtp1331270134-51-null-226) [c: s: r: x:n11_products t:null-226] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=2
+2024-03-10 09:11:14.063 INFO  (qtp1331270134-17-null-225) [c: s: r: x: t:null-225] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=33
+2024-03-10 09:11:14.077 INFO  (qtp1331270134-47-null-227) [c: s: r: x:n11_products t:null-227] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=facet%3Dtrue%26facet.field%3D+price&q=stock_count:[50+TO+*]&indent=true&q.op=OR&fq=price:"1230"&facet=true&useParams=&_=1710061142070} hits=2 status=0 QTime=33
+2024-03-10 09:11:36.026 INFO  (qtp1331270134-17-null-228) [c: s: r: x:n11_products t:null-228] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=facet%3Dtrue%26facet.field%3Dprice&q=stock_count:[50+TO+*]&indent=true&q.op=OR&fq=price:"1230"&facet=true&useParams=&_=1710061142070} hits=2 status=0 QTime=1
+2024-03-10 09:11:36.037 INFO  (qtp1331270134-20-null-229) [c: s: r: x:n11_products t:null-229] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:11:36.045 INFO  (qtp1331270134-47-null-230) [c: s: r: x: t:null-230] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:11:36.054 INFO  (qtp1331270134-17-null-231) [c: s: r: x: t:null-231] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=3
+2024-03-10 09:11:37.178 INFO  (qtp1331270134-51-null-232) [c: s: r: x:n11_products t:null-232] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=facet%3Dtrue%26facet.field%3Dprice&q=stock_count:[50+TO+*]&indent=true&q.op=OR&fq=price:"1230"&facet=true&useParams=&_=1710061142070} hits=2 status=0 QTime=1
+2024-03-10 09:11:37.184 INFO  (qtp1331270134-25-null-233) [c: s: r: x: t:null-233] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:11:37.195 INFO  (qtp1331270134-17-null-234) [c: s: r: x: t:null-234] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:11:37.198 INFO  (qtp1331270134-25-null-235) [c: s: r: x:n11_products t:null-235] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:11:53.304 INFO  (qtp1331270134-17-null-236) [c: s: r: x:n11_products t:null-236] o.a.s.c.S.Request webapp=/solr path=/select params={facet.query=facet%3Dtrue%26facet.field%3Dprice&q=stock_count:[50+TO+*]&indent=true&q.op=OR&facet=true&useParams=&_=1710061142070} hits=3 status=0 QTime=1
+2024-03-10 09:11:53.313 INFO  (qtp1331270134-25-null-237) [c: s: r: x:n11_products t:null-237] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:11:53.323 INFO  (qtp1331270134-20-null-238) [c: s: r: x: t:null-238] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:11:53.329 INFO  (qtp1331270134-17-null-239) [c: s: r: x: t:null-239] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:12:19.325 INFO  (qtp1331270134-18-null-241) [c: s: r: x: t:null-241] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:12:19.325 WARN  (qtp1331270134-17-null-240) [c: s: r: x:n11_products t:null-240] o.a.s.r.SimpleFacets Raising facet.mincount from 0 to 1, because field price is Points-based.
+2024-03-10 09:12:19.331 INFO  (qtp1331270134-17-null-240) [c: s: r: x:n11_products t:null-240] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[50+TO+*]&facet.field=price&indent=true&q.op=OR&facet=true&useParams=&_=1710061142070} hits=3 status=0 QTime=11
+2024-03-10 09:12:19.343 INFO  (qtp1331270134-25-null-242) [c: s: r: x: t:null-242] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:12:19.347 INFO  (qtp1331270134-51-null-243) [c: s: r: x:n11_products t:null-243] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=2
+2024-03-10 09:12:53.003 INFO  (qtp1331270134-51-null-245) [c: s: r: x: t:null-245] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:12:53.006 INFO  (qtp1331270134-25-null-244) [c: s: r: x:n11_products t:null-244] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[50+TO+*]&facet.field=id&indent=true&q.op=OR&facet=true&useParams=&_=1710061142070} hits=3 status=0 QTime=12
+2024-03-10 09:12:53.019 INFO  (qtp1331270134-17-null-246) [c: s: r: x:n11_products t:null-246] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:12:53.041 INFO  (qtp1331270134-18-null-247) [c: s: r: x: t:null-247] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=6
+2024-03-10 09:13:42.524 INFO  (qtp1331270134-20-null-249) [c: s: r: x:n11_products t:null-249] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=3
+2024-03-10 09:13:42.524 INFO  (qtp1331270134-18-null-248) [c: s: r: x: t:null-248] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=3
+2024-03-10 09:13:42.528 WARN  (qtp1331270134-51-null-250) [c: s: r: x:n11_products t:null-250] o.a.s.r.SimpleFacets Raising facet.mincount from 0 to 1, because field price is Points-based.
+2024-03-10 09:13:42.536 INFO  (qtp1331270134-51-null-250) [c: s: r: x:n11_products t:null-250] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[50+TO+*]&facet.field=price&indent=true&q.op=OR&facet=true&useParams=&_=1710061142070} hits=3 status=0 QTime=13
+2024-03-10 09:13:42.552 INFO  (qtp1331270134-25-null-251) [c: s: r: x: t:null-251] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=22
+2024-03-10 09:14:09.623 INFO  (qtp1331270134-20-null-252) [c: s: r: x: t:null-252] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710056519497} status=0 QTime=4
+2024-03-10 09:14:09.649 ERROR (qtp1331270134-18-null-253) [c: s: r: x:n11_products t:null-253] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'price', pos=5
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:176)
+org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'price', pos=5
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:176) ~[?:?]
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:61) ~[?:?]
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:294) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:201) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:431) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:226) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2884) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.executeCoreRequest(HttpSolrCall.java:875) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:561) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:262) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:219) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:249) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:215) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.19.jar:10.0.19]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+2024-03-10 09:14:09.649 INFO  (qtp1331270134-18-null-253) [c: s: r: x:n11_products t:null-253] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[50+TO+*]&indent=true&q.op=OR&sort=price&useParams=&_=1710061142070} status=400 QTime=24
+2024-03-10 09:14:09.656 INFO  (qtp1331270134-25-null-254) [c: s: r: x: t:null-254] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710056519497} status=0 QTime=0
+2024-03-10 09:14:09.662 INFO  (qtp1331270134-51-null-255) [c: s: r: x:n11_products t:null-255] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710061142070} status=0 QTime=0
+2024-03-10 09:14:22.928 INFO  (qtp1331270134-51-null-258) [c: s: r: x: t:null-258] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710062062888} status=0 QTime=0
+2024-03-10 09:14:22.934 INFO  (qtp1331270134-20-null-257) [c: s: r: x: t:null-257] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710062062888} status=0 QTime=5
+2024-03-10 09:14:22.941 ERROR (qtp1331270134-20-null-259) [c: s: r: x:n11_products t:null-259] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'price', pos=5
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:176)
+org.apache.solr.common.SolrException: Can't determine a Sort Order (asc or desc) in sort spec 'price', pos=5
+	at org.apache.solr.search.SortSpecParsing.parseSortSpecImpl(SortSpecParsing.java:176) ~[?:?]
+	at org.apache.solr.search.SortSpecParsing.parseSortSpec(SortSpecParsing.java:61) ~[?:?]
+	at org.apache.solr.search.QParser.getSortSpec(QParser.java:294) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:201) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:431) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:226) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2884) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.executeCoreRequest(HttpSolrCall.java:875) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:561) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:262) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilter$0(SolrDispatchFilter.java:219) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:249) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:215) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:213) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:195) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.19.jar:10.0.19]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.19.jar:10.0.19]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+2024-03-10 09:14:22.941 INFO  (qtp1331270134-20-null-259) [c: s: r: x:n11_products t:null-259] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[50+TO+*]&indent=true&q.op=OR&sort=price&useParams=&_=1710062062911} status=400 QTime=1
+2024-03-10 09:14:22.951 INFO  (qtp1331270134-25-null-260) [c: s: r: x:n11_products t:null-260] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710062062911} status=0 QTime=0
+2024-03-10 09:14:33.407 INFO  (qtp1331270134-20-null-261) [c: s: r: x:n11_products t:null-261] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710062062911} status=0 QTime=0
+2024-03-10 09:14:33.417 INFO  (qtp1331270134-51-null-262) [c: s: r: x: t:null-262] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710062062888} status=0 QTime=4
+2024-03-10 09:14:33.421 INFO  (qtp1331270134-17-null-263) [c: s: r: x: t:null-263] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710062062888} status=0 QTime=0
+2024-03-10 09:14:33.446 INFO  (qtp1331270134-20-null-264) [c: s: r: x:n11_products t:null-264] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[50+TO+*]&indent=true&q.op=OR&sort=price+asc&useParams=&_=1710062062911} hits=3 status=0 QTime=15
+2024-03-10 09:14:43.072 INFO  (qtp1331270134-17-null-266) [c: s: r: x: t:null-266] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1710062062888} status=0 QTime=0
+2024-03-10 09:14:43.072 INFO  (qtp1331270134-51-null-265) [c: s: r: x: t:null-265] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1710062062888} status=0 QTime=10
+2024-03-10 09:14:43.081 INFO  (qtp1331270134-25-null-267) [c: s: r: x:n11_products t:null-267] o.a.s.c.S.Request webapp=/solr path=/select params={q=stock_count:[50+TO+*]&indent=true&q.op=OR&sort=price+desc&useParams=&_=1710062062911} hits=3 status=0 QTime=1
+2024-03-10 09:14:43.090 INFO  (qtp1331270134-20-null-268) [c: s: r: x:n11_products t:null-268] o.a.s.c.S.Request webapp=/solr path=/config/params params={wt=json&_=1710062062911} status=0 QTime=0
